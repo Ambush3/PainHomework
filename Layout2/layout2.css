@@ -32,3 +32,29 @@ section > div:nth-child(3){
     width: 60%;
     float: left;
 }
+
+@media screen and (max-width: 600px) {
+    section div {
+        height: 300px;
+    }
+
+    section > div:nth-child(2){
+        height: 300px;
+    }
+
+    section > div:nth-child(3){
+        height: 300px;
+    }
+}
+
+section div {
+    border-radius: 6px;
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+section div:hover {
+    background: pink;
+    border-radius: 25%;
+}
